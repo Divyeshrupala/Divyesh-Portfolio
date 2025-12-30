@@ -6,7 +6,7 @@ const Projects = () => {
       title: 'MascotsB - IELTS Coaching & Visa Consultancy Platform',
       description: 'A comprehensive frontend solution for an IELTS coaching institute and visa consultancy service, designed to streamline student engagement and exam preparation.',
       technologies: ['HTML', 'CSS', 'JS', 'Google form'],
-      image: '/public/mascots.png',
+      image: '/mascots.png',
       githubUrl: 'https://github.com/Divyeshrupala/MascotsB_new', // Add your GitHub URL
       liveUrl: '#' // Optional: Add live demo URL
     },
