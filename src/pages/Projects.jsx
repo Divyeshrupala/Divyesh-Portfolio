@@ -8,7 +8,7 @@ const Projects = () => {
       technologies: ['HTML', 'CSS', 'JS', 'Google form'],
       image: 'images/mascots.png',
       githubUrl: 'https://github.com/Divyeshrupala/MascotsB_new', // Add your GitHub URL
-      liveUrl: 'https://vercel.com/divyeshrupala789-gmailcoms-projects?repo=https://github.com/Divyeshrupala/MascotsB_new' // Optional: Add live demo URL
+      liveUrl: 'https://mascotsb.vercel.app/' // Optional: Add live demo URL
     },
     {
       title: 'SSV School - Comprehensive Educational Website',
@@ -16,7 +16,7 @@ const Projects = () => {
       technologies: ['HTML', 'CSS', 'JS'],
       image: 'images/ssv.png',
       githubUrl: 'https://github.com/Divyeshrupala/ssv-campus',
-      liveUrl: 'https://vercel.com/divyeshrupala789-gmailcoms-projects?repo=https://github.com/Divyeshrupala/ssv-campus'
+      liveUrl: 'https://ssv-campus.vercel.app/'
     },
     {
       title: 'Portfolio Website',
@@ -24,7 +24,7 @@ const Projects = () => {
       technologies: ['HTML', 'CSS', 'JS', 'Tailwind CSS'],
       image: 'images/portfolio.png',
       githubUrl: 'https://github.com/Divyeshrupala/Portfolio',
-      liveUrl: 'https://vercel.com/divyeshrupala789-gmailcoms-projects?repo=https://github.com/Divyeshrupala/Portfolio'
+      liveUrl: 'https://divyeshrupala.vercel.app/'
     },
     {
       title: 'ChatGPT Clone - AI-Powered Conversational Interface',
@@ -40,7 +40,7 @@ const Projects = () => {
       technologies: ['HTML', 'CSS', 'JS', 'Google form'],
       image: 'images/dev-organic.png',
       githubUrl: 'https://github.com/Divyeshrupala/DevAyurvedic---Ayurvedic-Medine-Website-',
-      liveUrl: 'https://vercel.com/divyeshrupala789-gmailcoms-projects?repo=https://github.com/Divyeshrupala/DevOrganic'
+      liveUrl: 'https://dev-organic.vercel.app/index.html'
     },
     {
       title: 'Flora Enterprise - Landscaping & Gardening Services Website',
@@ -48,15 +48,15 @@ const Projects = () => {
       technologies: ['HTML', 'CSS', 'JS'],
       image: 'images/flora.png',
       githubUrl: 'https://github.com/Divyeshrupala/flora-enterprise-main---Copy',
-      liveUrl: 'https://vercel.com/divyeshrupala789-gmailcoms-projects?repo=https://github.com/Divyeshrupala/flora-enterprise-main---Copy'
+      liveUrl: 'https://flora-enterprise-main-copy.vercel.app/'
     },
     {
-      title: 'Fitness Tracker',
-      description: 'Personal fitness tracking application with workout logging, progress charts, calorie tracking, and personalized fitness goal setting features.',
-      technologies: ['HTML', 'CSS', 'JS', 'Google form'],
-      image: 'images/ssv.png',
-      githubUrl: 'https://github.com/yourusername/fitness-tracker',
-      liveUrl: 'https://fitness-tracker-demo.com'
+      title: 'Dr. Ranu K Dutta - Medical Professional Portfolio',
+      description: 'A dedicated portfolio website for Dr. Ranu K Dutta, highlighting medical expertise, services offered, and patient testimonials to enhance professional online presence.',
+      technologies: ['HTML', 'CSS', 'JS', 'React', 'Email Authentication'],
+      image: 'images/ranu-dutta.png',
+      githubUrl: 'https://github.com/yourusername/ranu-dutta',
+      liveUrl: 'https://ranu-dutta.vercel.app/'
     },
     {
       title: 'Blog Platform',
@@ -113,6 +113,15 @@ const Projects = () => {
                   >
                     <Github size={20} />
                   </button>
+                  {project.liveUrl && (
+                    <button 
+                      onClick={() => handleExternalClick(project.liveUrl)}
+                      className="p-2 bg-primary rounded-lg hover:bg-primary/90 transition-colors hover:scale-110"
+                      title="View Live Demo"
+                    >
+                      <ExternalLink size={20} />
+                    </button>
+                  )}
                 </div>
               </div>
 
