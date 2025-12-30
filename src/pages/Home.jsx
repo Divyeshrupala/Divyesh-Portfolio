@@ -79,14 +79,14 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
             {[
               {
-                title: 'E-Commerce Platform',
-                desc: 'Full-stack online shopping experience',
-                tech: 'React, Node.js, MongoDB',
+                title: 'My Personal ChatGPT',
+                desc: 'Chatbot using OpenAI API',
+                tech: 'HTML, CSS, JS, OpenAI API',
               },
               {
-                title: 'Task Management App',
-                desc: 'Collaborative productivity tool',
-                tech: 'React, Firebase, Tailwind',
+                title: 'Dev Organic - An E-commerce Website',
+                desc: 'Collaborative project for organic products',
+                tech: 'HTML, CSS, JS, Google forms',
               },
             ].map((project, index) => (
               <div
