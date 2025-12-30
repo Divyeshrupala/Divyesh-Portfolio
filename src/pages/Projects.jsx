@@ -6,49 +6,49 @@ const Projects = () => {
       title: 'MascotsB - IELTS Coaching & Visa Consultancy Platform',
       description: 'A comprehensive frontend solution for an IELTS coaching institute and visa consultancy service, designed to streamline student engagement and exam preparation.',
       technologies: ['HTML', 'CSS', 'JS', 'Google form'],
-      image: '/public/mascots.png',
+      image: 'mascots.png',
       githubUrl: 'https://github.com/Divyeshrupala/MascotsB_new', // Add your GitHub URL
-      liveUrl: '#' // Optional: Add live demo URL
+      liveUrl: 'https://vercel.com/divyeshrupala789-gmailcoms-projects?repo=https://github.com/Divyeshrupala/MascotsB_new' // Optional: Add live demo URL
     },
     {
       title: 'SSV School - Comprehensive Educational Website',
       description: 'A full-featured school management and information portal with extensive content architecture spanning 10+ interconnected pages and sub-pages.',
       technologies: ['HTML', 'CSS', 'JS'],
-      image: '/public/ssv.png',
+      image: 'ssv.png',
       githubUrl: 'https://github.com/Divyeshrupala/ssv-campus',
-      liveUrl: 'https://task-app-demo.com'
+      liveUrl: 'https://vercel.com/divyeshrupala789-gmailcoms-projects?repo=https://github.com/Divyeshrupala/ssv-campus'
     },
     {
       title: 'Portfolio Website',
       description: 'A customizable portfolio website builder allowing users to create professional portfolios with drag-and-drop components.',
       technologies: ['HTML', 'CSS', 'JS', 'Tailwind CSS'],
-      image: '/public/portfolio.png',
+      image: 'portfolio.png',
       githubUrl: 'https://github.com/Divyeshrupala/Portfolio',
-      liveUrl: 'https://portfolio-builder-demo.com'
+      liveUrl: 'https://vercel.com/divyeshrupala789-gmailcoms-projects?repo=https://github.com/Divyeshrupala/Portfolio'
     },
     {
       title: 'ChatGPT Clone - AI-Powered Conversational Interface',
       description: 'A functional frontend implementation of ChatGPT leveraging OpenAI\'s API to create an interactive AI conversation platform.',
       technologies: ['HTML', 'CSS', 'JS', 'Open AI API'],
-      image: '/public/Chatbot.png',
+      image: 'Chatbot.png',
       githubUrl: 'https://github.com/Divyeshrupala/MyPersonalChatGPT',
-      liveUrl: 'https://weather-dashboard-demo.com'
+      liveUrl: 'https://mypersonalchatgpt-1.onrender.com'
     },
     {
       title: 'Dev Organic - E-commerce Platform with Secure Contact Integration',
       description: 'A strategic e-commerce solution for organic products sales, prioritizing customer safety through controlled contact mechanisms rather than direct payment processing.',
       technologies: ['HTML', 'CSS', 'JS', 'Google form'],
-      image: '/public/dev-organic.png',
+      image: 'dev-organic.png',
       githubUrl: 'https://github.com/Divyeshrupala/DevAyurvedic---Ayurvedic-Medine-Website-',
-      liveUrl: 'https://social-dashboard-demo.com'
+      liveUrl: 'https://vercel.com/divyeshrupala789-gmailcoms-projects?repo=https://github.com/Divyeshrupala/DevOrganic'
     },
     {
       title: 'Flora Enterprise - Landscaping & Gardening Services Website',
       description: 'A visually appealing and functional website for a professional landscaping and gardening business, designed to showcase services, projects, and facilitate customer inquiries.',
       technologies: ['HTML', 'CSS', 'JS'],
-      image: '/public/flora.png',
+      image: 'flora.png',
       githubUrl: 'https://github.com/Divyeshrupala/flora-enterprise-main---Copy',
-      liveUrl: 'https://recipe-finder-demo.com'
+      liveUrl: 'https://vercel.com/divyeshrupala789-gmailcoms-projects?repo=https://github.com/Divyeshrupala/flora-enterprise-main---Copy'
     },
     {
       title: 'Fitness Tracker',
