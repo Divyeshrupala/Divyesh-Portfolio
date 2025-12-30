@@ -6,7 +6,7 @@ const Projects = () => {
       title: 'MascotsB - IELTS Coaching & Visa Consultancy Platform',
       description: 'A comprehensive frontend solution for an IELTS coaching institute and visa consultancy service, designed to streamline student engagement and exam preparation.',
       technologies: ['HTML', 'CSS', 'JS', 'Google form'],
-      image: 'mascots.png',
+      image: 'images/mascots.png',
       githubUrl: 'https://github.com/Divyeshrupala/MascotsB_new', // Add your GitHub URL
       liveUrl: 'https://vercel.com/divyeshrupala789-gmailcoms-projects?repo=https://github.com/Divyeshrupala/MascotsB_new' // Optional: Add live demo URL
     },
@@ -14,7 +14,7 @@ const Projects = () => {
       title: 'SSV School - Comprehensive Educational Website',
       description: 'A full-featured school management and information portal with extensive content architecture spanning 10+ interconnected pages and sub-pages.',
       technologies: ['HTML', 'CSS', 'JS'],
-      image: 'ssv.png',
+      image: 'images/ssv.png',
       githubUrl: 'https://github.com/Divyeshrupala/ssv-campus',
       liveUrl: 'https://vercel.com/divyeshrupala789-gmailcoms-projects?repo=https://github.com/Divyeshrupala/ssv-campus'
     },
@@ -22,7 +22,7 @@ const Projects = () => {
       title: 'Portfolio Website',
       description: 'A customizable portfolio website builder allowing users to create professional portfolios with drag-and-drop components.',
       technologies: ['HTML', 'CSS', 'JS', 'Tailwind CSS'],
-      image: 'portfolio.png',
+      image: 'images/portfolio.png',
       githubUrl: 'https://github.com/Divyeshrupala/Portfolio',
       liveUrl: 'https://vercel.com/divyeshrupala789-gmailcoms-projects?repo=https://github.com/Divyeshrupala/Portfolio'
     },
@@ -30,7 +30,7 @@ const Projects = () => {
       title: 'ChatGPT Clone - AI-Powered Conversational Interface',
       description: 'A functional frontend implementation of ChatGPT leveraging OpenAI\'s API to create an interactive AI conversation platform.',
       technologies: ['HTML', 'CSS', 'JS', 'Open AI API'],
-      image: 'Chatbot.png',
+      image: 'images/Chatbot.png',
       githubUrl: 'https://github.com/Divyeshrupala/MyPersonalChatGPT',
       liveUrl: 'https://mypersonalchatgpt-1.onrender.com'
     },
@@ -38,7 +38,7 @@ const Projects = () => {
       title: 'Dev Organic - E-commerce Platform with Secure Contact Integration',
       description: 'A strategic e-commerce solution for organic products sales, prioritizing customer safety through controlled contact mechanisms rather than direct payment processing.',
       technologies: ['HTML', 'CSS', 'JS', 'Google form'],
-      image: 'dev-organic.png',
+      image: 'images/dev-organic.png',
       githubUrl: 'https://github.com/Divyeshrupala/DevAyurvedic---Ayurvedic-Medine-Website-',
       liveUrl: 'https://vercel.com/divyeshrupala789-gmailcoms-projects?repo=https://github.com/Divyeshrupala/DevOrganic'
     },
@@ -46,7 +46,7 @@ const Projects = () => {
       title: 'Flora Enterprise - Landscaping & Gardening Services Website',
       description: 'A visually appealing and functional website for a professional landscaping and gardening business, designed to showcase services, projects, and facilitate customer inquiries.',
       technologies: ['HTML', 'CSS', 'JS'],
-      image: 'flora.png',
+      image: 'images/flora.png',
       githubUrl: 'https://github.com/Divyeshrupala/flora-enterprise-main---Copy',
       liveUrl: 'https://vercel.com/divyeshrupala789-gmailcoms-projects?repo=https://github.com/Divyeshrupala/flora-enterprise-main---Copy'
     },
@@ -54,7 +54,7 @@ const Projects = () => {
       title: 'Fitness Tracker',
       description: 'Personal fitness tracking application with workout logging, progress charts, calorie tracking, and personalized fitness goal setting features.',
       technologies: ['HTML', 'CSS', 'JS', 'Google form'],
-      image: 'ssv.png',
+      image: 'images/ssv.png',
       githubUrl: 'https://github.com/yourusername/fitness-tracker',
       liveUrl: 'https://fitness-tracker-demo.com'
     },
@@ -62,7 +62,7 @@ const Projects = () => {
       title: 'Blog Platform',
       description: 'Modern blogging platform with markdown support, rich text editor, categories, tags, comments system, and SEO optimization for content creators.',
       technologies: ['HTML', 'CSS', 'JS', 'Google form'],
-      image: 'dev-organic.png',
+      image: 'images/dev-organic.png',
       githubUrl: 'https://github.com/yourusername/blog-platform',
       liveUrl: 'https://blog-platform-demo.com'
     },
