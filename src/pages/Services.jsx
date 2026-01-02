@@ -1,100 +1,138 @@
-import { Globe, Code, Smartphone, Database, Zap, Palette, Layout, Crown, Settings } from 'lucide-react';
-import { Helmet } from 'react-helmet';
+import {
+  Globe,
+  Code,
+  Smartphone,
+  Database,
+  Zap,
+  Palette,
+  Layout,
+  Crown,
+  Settings,
+} from "lucide-react";
+import { Helmet } from "react-helmet";
 
 const Services = () => {
   const services = [
     {
       icon: Globe,
-      title: 'Web Development',
+      title: "Web Development",
       description:
-        'Creating responsive and modern websites using the latest web technologies. From landing pages to complex web applications.',
-      features: ['Responsive Design', 'SEO Optimized', 'Fast Performance', 'Cross-browser Compatible'],
+        "Creating responsive and modern websites using the latest web technologies. From landing pages to complex web applications.",
+      features: [
+        "Responsive Design",
+        "SEO Optimized",
+        "Fast Performance",
+        "Cross-browser Compatible",
+      ],
     },
     {
       icon: Code,
-      title: 'Frontend Development',
+      title: "Frontend Development",
       description:
-        'Building interactive user interfaces with React, JavaScript, and modern CSS frameworks for seamless user experiences.',
-      features: ['React.js', 'HTML5 & CSS3', 'JavaScript ES6+', 'Tailwind CSS'],
+        "Building interactive user interfaces with React, JavaScript, and modern CSS frameworks for seamless user experiences.",
+      features: ["React.js", "HTML5 & CSS3", "JavaScript ES6+", "Tailwind CSS"],
     },
     {
       icon: Database,
-      title: 'Backend Development',
+      title: "Backend Development",
       description:
-        'Developing robust server-side applications and APIs with Node.js, ensuring secure and efficient data management.',
-      features: ['Node.js & Express', 'RESTful APIs', 'Database Design', 'Authentication'],
+        "Developing robust server-side applications and APIs with Node.js, ensuring secure and efficient data management.",
+      features: [
+        "Node.js & Express",
+        "RESTful APIs",
+        "Database Design",
+        "Authentication",
+      ],
     },
     {
       icon: Smartphone,
-      title: 'Responsive Design',
+      title: "Responsive Design",
       description:
-        'Ensuring your website looks perfect on all devices, from mobile phones to desktop computers.',
-      features: ['Mobile-First', 'Tablet Optimized', 'Desktop Enhanced', 'Touch Friendly'],
+        "Ensuring your website looks perfect on all devices, from mobile phones to desktop computers.",
+      features: [
+        "Mobile-First",
+        "Tablet Optimized",
+        "Desktop Enhanced",
+        "Touch Friendly",
+      ],
     },
     {
       icon: Zap,
-      title: 'Performance Optimization',
+      title: "Performance Optimization",
       description:
-        'Optimizing websites for lightning-fast load times and smooth interactions to enhance user experience.',
-      features: ['Code Splitting', 'Lazy Loading', 'Image Optimization', 'Caching Strategies'],
+        "Optimizing websites for lightning-fast load times and smooth interactions to enhance user experience.",
+      features: [
+        "Code Splitting",
+        "Lazy Loading",
+        "Image Optimization",
+        "Caching Strategies",
+      ],
     },
     {
       icon: Palette,
-      title: 'UI/UX Design Implementation',
+      title: "UI/UX Design Implementation",
       description:
-        'Transforming designs into pixel-perfect, interactive web pages with attention to detail and user experience.',
-      features: ['Design Systems', 'Component Libraries', 'Animations', 'Accessibility'],
+        "Transforming designs into pixel-perfect, interactive web pages with attention to detail and user experience.",
+      features: [
+        "Design Systems",
+        "Component Libraries",
+        "Animations",
+        "Accessibility",
+      ],
     },
   ];
 
   const pricingPlans = [
     {
       icon: Layout,
-      title: 'Static Website',
-      price: '₹4999',
-      description: 'Perfect for small businesses and personal portfolios. Fast, responsive, and SEO-ready.',
+      title: "Static Website",
+      price: "₹4999",
+      description:
+        "Perfect for small businesses and personal portfolios. Fast, responsive, and SEO-ready.",
       features: [
-        '5 Static HTML Pages', 
-        'Fully Responsive Design', 
-        'Working Contact Form', 
-        'On-Page SEO Optimization', 
-        'Image Compression & Optimization', 
-        '1 Year Free Domain like .in/.com/.net', 
-        'Wattsapp/Call/Email Button Integration',
-        'Google Map Integration',
-        '30 Days Post-Launch Support',
+        "5 Static HTML Pages",
+        "Fully Responsive Design",
+        "Working Contact Form",
+        "On-Page SEO Optimization",
+        "Image Compression & Optimization",
+        "1 Year Free Domain like .in/.com/.net",
+        "Wattsapp/Call/Email Button Integration",
+        "Google Map Integration",
+        "30 Days Post-Launch Support",
       ],
     },
     {
       icon: Crown,
-      title: 'Premium Design',
-      price: '₹7999',
-      description: 'Advanced features with premium design. Up to 12 pages with Great UI/UX and animations and SEO Friendly.',
+      title: "Premium Design",
+      price: "₹7999",
+      description:
+        "Advanced features with premium design. Up to 12 pages with Great UI/UX and animations and SEO Friendly.",
       features: [
-        '12 Responsive HTML Pages', 
-        'Mobile-First Responsive Design', 
-        'Contact Form + Blog Pages', 
-        'Advanced SEO Implementation',  
-        'Performance Optimization', 
-        '1 Year Free Domain like .in/.com/.net',
-        'Wattsapp/Call/Email Button Integration',
-        '60 Days Post-Launch Support',      
+        "12 Responsive HTML Pages",
+        "Mobile-First Responsive Design",
+        "Contact Form + Blog Pages",
+        "Advanced SEO Implementation",
+        "Performance Optimization",
+        "1 Year Free Domain like .in/.com/.net",
+        "Wattsapp/Call/Email Button Integration",
+        "60 Days Post-Launch Support",
       ],
     },
     {
       icon: Settings,
-      title: 'Custom Solution',
-      price: 'Custom',
-      description: 'Tailored websites for complex needs. Full-stack development with your specific requirements.',
+      title: "Custom Solution",
+      price: "Custom",
+      description:
+        "Tailored websites for complex needs. Full-stack development with your specific requirements.",
       features: [
-        'Unlimited Custom Pages', 
-        'Responsive website design', 
-        'Custom Functionality Development', 
-        'Node.js Backend Integration', 
-        'Database Design & Setup', 
-        'E-commerce Functionality Ready', 
-        'Wattsapp/Call/Email Button Integration',
-        'Priority 24/7 Support',
+        "Unlimited Custom Pages",
+        "Responsive website design",
+        "Custom Functionality Development",
+        "Node.js Backend Integration",
+        "Database Design & Setup",
+        "E-commerce Functionality Ready",
+        "Wattsapp/Call/Email Button Integration",
+        "Priority 24/7 Support",
       ],
     },
   ];
@@ -102,7 +140,9 @@ const Services = () => {
   return (
     <>
       <Helmet>
-        <title>Services | Divyesh Rupala - Web Development & Full Stack Solutions</title>
+        <title>
+          Services | Divyesh Rupala - Web Development & Full Stack Solutions
+        </title>
         <meta
           name="description"
           content="Static ₹4999 (5 HTML pages + SEO), Premium ₹7999 (12 pages + animations), Custom full-stack solutions. Professional web development services."
@@ -143,14 +183,19 @@ const Services = () => {
                   <div className="w-14 h-14 bg-primary/20 rounded-xl flex items-center justify-center group-hover:bg-primary/30 transition-colors mb-4">
                     <service.icon className="w-7 h-7 text-primary" />
                   </div>
-                  <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
+                  <h3 className="text-xl font-semibold mb-3">
+                    {service.title}
+                  </h3>
                   <p className="text-muted-foreground leading-relaxed mb-4">
                     {service.description}
                   </p>
                 </div>
                 <div className="space-y-2">
                   {service.features.map((feature, featureIndex) => (
-                    <div key={featureIndex} className="flex items-start gap-3 pl-1">
+                    <div
+                      key={featureIndex}
+                      className="flex items-start gap-3 pl-1"
+                    >
                       <div className="w-1.5 h-1.5 bg-primary rounded-full flex-shrink-0 mt-1.5" />
                       <span className="text-sm text-muted-foreground text-justify leading-relaxed">
                         {feature}
@@ -166,10 +211,12 @@ const Services = () => {
           <div className="mb-16">
             <div className="text-center mb-12">
               <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-                Make Your Own Website in <span className="text-gradient">Low Budget</span>
+                Make Your Own Website in{" "}
+                <span className="text-gradient">Low Budget</span>
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Affordable professional websites starting at just ₹4999. Perfect for startups and small businesses.
+                Affordable professional websites starting at just ₹4999. Perfect
+                for startups and small businesses.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -182,11 +229,18 @@ const Services = () => {
                     <plan.icon className="w-8 h-8 text-primary" />
                   </div>
                   <h3 className="text-2xl font-bold mb-4">{plan.title}</h3>
-                  <div className="text-4xl font-bold text-gradient mb-6">{plan.price}</div>
-                  <p className="text-muted-foreground mb-8 leading-relaxed text-justify mx-4">{plan.description}</p>
+                  <div className="text-4xl font-bold text-gradient mb-6">
+                    {plan.price}
+                  </div>
+                  <p className="text-muted-foreground mb-8 leading-relaxed text-justify mx-4">
+                    {plan.description}
+                  </p>
                   <div className="space-y-3 mb-8">
                     {plan.features.map((feature, featureIndex) => (
-                      <div key={featureIndex} className="flex items-start gap-3 pl-1">
+                      <div
+                        key={featureIndex}
+                        className="flex items-start gap-3 pl-1"
+                      >
                         <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0 mt-1.5" />
                         <span className="text-sm text-muted-foreground text-justify leading-relaxed">
                           {feature}
@@ -195,7 +249,7 @@ const Services = () => {
                     ))}
                   </div>
                   <a
-                    href="/contact"
+                    href="/project-inquiry"
                     className="inline-block w-full px-6 py-3 bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-white rounded-xl font-semibold transition-all hover:scale-105"
                   >
                     Get Started
@@ -213,28 +267,30 @@ const Services = () => {
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
               {[
                 {
-                  step: '01',
-                  title: 'Discovery',
-                  desc: 'Understanding your requirements and goals',
+                  step: "01",
+                  title: "Discovery",
+                  desc: "Understanding your requirements and goals",
                 },
                 {
-                  step: '02',
-                  title: 'Planning',
-                  desc: 'Creating detailed project roadmap',
+                  step: "02",
+                  title: "Planning",
+                  desc: "Creating detailed project roadmap",
                 },
                 {
-                  step: '03',
-                  title: 'Development',
-                  desc: 'Building with best practices and clean code',
+                  step: "03",
+                  title: "Development",
+                  desc: "Building with best practices and clean code",
                 },
                 {
-                  step: '04',
-                  title: 'Delivery',
-                  desc: 'Testing, deployment, and ongoing support',
+                  step: "04",
+                  title: "Delivery",
+                  desc: "Testing, deployment, and ongoing support",
                 },
               ].map((phase, index) => (
                 <div key={index} className="text-center">
-                  <div className="text-5xl font-bold text-gradient mb-4">{phase.step}</div>
+                  <div className="text-5xl font-bold text-gradient mb-4">
+                    {phase.step}
+                  </div>
                   <h3 className="text-lg font-semibold mb-2">{phase.title}</h3>
                   <p className="text-sm text-muted-foreground">{phase.desc}</p>
                 </div>
@@ -245,11 +301,12 @@ const Services = () => {
           {/* CTA Section */}
           <div className="text-center glass p-12 rounded-2xl">
             <h2 className="text-3xl font-bold mb-4">
-              Ready to Start Your <span className="text-gradient">Project?</span>
+              Ready to Start Your{" "}
+              <span className="text-gradient">Project?</span>
             </h2>
             <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Let's discuss how I can help bring your ideas to life with professional web development
-              services.
+              Let's discuss how I can help bring your ideas to life with
+              professional web development services.
             </p>
             <a
               href="/contact"
