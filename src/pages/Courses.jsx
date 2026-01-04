@@ -81,6 +81,15 @@ const Courses = () => {
     },
   ];
 
+  // Mailto link generator
+  const getMailtoLink = (courseTitle, coursePrice, courseDuration) => {
+    const subject = encodeURIComponent(`Course Inquiry: ${courseTitle}`);
+    const body = encodeURIComponent(
+      `Hi Divyesh,\n\nI am interested in your "${courseTitle}" course.\n\nCourse Details:\n• Price: ${coursePrice}\n• Duration: ${courseDuration}\n• Mode: ${courses[0].mode}\n\nPlease share more details, batch dates, and availability.\n\nThank you!\n\nBest regards,`
+    );
+    return `mailto:divyeshrupala@gmail.com?subject=${subject}&body=${body}`;
+  };
+
   return (
     <>
       <Helmet>
@@ -108,7 +117,7 @@ const Courses = () => {
               Our <span className="text-gradient">Courses</span>
             </h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              "Industry-Ready Training with Live Projects & Job Placement Support"
+              Industry-Ready Training with Live Projects & Job Placement Support
             </p>
           </div>
 
@@ -171,10 +180,15 @@ const Courses = () => {
                   <p className="text-sm text-muted-foreground">{course.eligibility}</p>
                 </div>
 
-                {/* CTA Button */}
-                <button className="w-full px-6 py-3 bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-white rounded-xl font-semibold transition-all hover:scale-105">
-                  Enroll Now
-                </button>
+                {/* Mailto CTA Button */}
+                <a
+                  href={getMailtoLink(course.title, course.price, course.duration)}
+                  className="w-full inline-block px-6 py-3 bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-white rounded-xl font-semibold text-center transition-all hover:scale-105 block"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Enroll Now →
+                </a>
               </div>
             ))}
           </div>
@@ -188,10 +202,10 @@ const Courses = () => {
               Join my courses and transform your career with professional web development training. Hands-on projects included.
             </p>
             <a
-              href="/contact"
+              href="mailto:divyeshrupala@gmail.com?subject=Course%20Inquiry:%20All%20Courses&body=Hi%20Divyesh,%0A%0AI%20am%20interested%20in%20your%20courses.%20Please%20share%20complete%20details,%20batch%20dates,%20and%20availability.%0A%0AThank%20you!"
               className="inline-block px-8 py-3 bg-primary hover:bg-primary/90 text-white rounded-lg font-medium transition-all hover:scale-105"
             >
-              Get Started Today
+              Get Started Today →
             </a>
           </div>
         </div>
