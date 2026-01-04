@@ -141,23 +141,48 @@ const Services = () => {
     <>
       <Helmet>
         <title>
-          Services | Divyesh Rupala - Web Development & Full Stack Solutions
+          Services | Divyesh Rupala - Frontend Developer & Web Development ₹4999
         </title>
         <meta
           name="description"
-          content="Static ₹4999 (5 HTML pages + SEO), Premium ₹7999 (12 pages + animations), Custom full-stack solutions. Professional web development services."
+          content="Professional Web Development Services in India: Static Website ₹4999 (5 pages), Premium ₹7999 (12 pages), Custom Full-Stack Solutions. React JS, Node.js, SEO Optimized."
+        />
+        <meta
+          name="keywords"
+          content="web development services India, static website ₹4999, React JS developer, frontend development, Node.js services, affordable website design Gujarat, web developer pricing"
         />
         <link rel="canonical" href="https://divyeshrupala.in/services" />
+
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://divyeshrupala.in/services" />
         <meta
           property="og:title"
-          content="Services | Divyesh Rupala - Web Development & Full Stack Solutions"
+          content="Services | Web Development Starting ₹4999 - Divyesh Rupala"
         />
         <meta
           property="og:description"
-          content="Professional packages: Static 5 HTML pages ₹4999, Premium 12 pages with animations ₹7999, Custom full-stack development."
+          content="Static websites ₹4999 | Premium ₹7999 | Custom full-stack development. React JS specialist from Gujarat, India."
         />
-        <meta property="og:url" content="https://divyeshrupala.in/services" />
-        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="https://divyeshrupala.in/og-services.jpg"
+        />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Web Development Services ₹4999 | Divyesh Rupala"
+        />
+        <meta
+          name="twitter:description"
+          content="Static ₹4999 (5 pages) | Premium ₹7999 | Custom Solutions. React JS Developer from Gujarat."
+        />
+        <meta
+          name="twitter:image"
+          content="https://divyeshrupala.in/og-services.jpg"
+        />
       </Helmet>
 
       <div className="min-h-screen py-20 px-4 sm:px-6 lg:px-8">

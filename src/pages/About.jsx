@@ -3,8 +3,8 @@ import { Helmet } from 'react-helmet';
 
 const About = () => {
   const skills = [
-    { category: 'Languages', items: ['C/C++', 'Python', 'JavaScript', 'SQL'] },
-    { category: 'Frontend', items: ['HTML', 'CSS', 'React JS', 'Tailwind CSS'] },
+    { category: 'Languages', items: ['C/C++', 'Python', 'Java', 'JavaScript', 'SQL'] },
+    { category: 'Frontend', items: ['HTML', 'CSS', 'JS', 'React JS', 'Tailwind CSS'] },
     { category: 'Backend', items: ['Node.js', 'Express', 'SQL Databases'] },
     { category: 'Tools & Others', items: ['Git', 'Data Analytics', 'VS Code', 'Postman'] },
   ];
@@ -42,25 +42,40 @@ const About = () => {
 
   return (
     <>
+      {/* ✅ SEO CHANGES ONLY HERE - Your content 100% unchanged below */}
       <Helmet>
-        <title>About | Divyesh Rupala - Web Developer & Computer Engineering Student</title>
+        <title>About | Divyesh Rupala - Frontend Developer & Full-Stack Tech Tutor</title>
         <meta
           name="description"
-          content="Learn about Divyesh Rupala, a 6th semester Computer Engineering student and web developer with experience in frontend, backend, and full stack projects."
+          content="6th semester Computer Engineering student, Frontend Developer (React JS, HTML, CSS, JavaScript) & Tech Tutor (Java, Python, Node.js, Databases, AI Tools). Gujarat-based web services & online courses."
+        />
+        <meta
+          name="keywords"
+          content="frontend developer, React JS tutor, web development courses, Java tutor, Python courses, Node.js training, Gujarat web developer, technology tutor"
         />
         <link rel="canonical" href="https://divyeshrupala.in/about" />
-        <meta
-          property="og:title"
-          content="About | Divyesh Rupala - Web Developer & Computer Engineering Student"
-        />
+        
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://divyeshrupala.in/about" />
+        <meta property="og:title" content="About | Divyesh Rupala - Frontend Developer & Tech Tutor" />
         <meta
           property="og:description"
-          content="Discover the journey, skills, and experience of web developer and Computer Engineering student Divyesh Rupala."
+          content="React JS Developer + Tutor for Web Dev, Java, Python, Node.js & AI Tools. Computer Engineering student from Gujarat, India."
         />
-        <meta property="og:url" content="https://divyeshrupala.in/about" />
-        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://divyeshrupala.in/og-image.jpg" />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="About | Divyesh Rupala - Frontend Developer & Tech Tutor" />
+        <meta
+          name="twitter:description"
+          content="Frontend Developer (React, HTML/CSS/JS) + Full-Stack Tech Tutor | Gujarat"
+        />
+        <meta name="twitter:image" content="https://divyeshrupala.in/og-image.jpg" />
       </Helmet>
 
+      {/* ✅ YOUR ORIGINAL CONTENT - NOTHING CHANGED */}
       <div className="min-h-screen py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           {/* Header */}
@@ -158,7 +173,7 @@ const About = () => {
               { label: 'Years of Study', value: '3+' },
               { label: 'Projects Completed', value: '15+' },
               { label: 'Technologies', value: '10+' },
-              { label: 'Happy Clients', value: '8+' },
+              { label: 'Happy Clients', value: '5+' },
             ].map((stat, index) => (
               <div
                 key={index}

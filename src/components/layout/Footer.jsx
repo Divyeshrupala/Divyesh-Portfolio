@@ -41,7 +41,7 @@ const Footer = () => {
 
   // Tech stack
   const techStack = [
-    "HTML", "CSS", "JavaScript", "React","Node JS", "SQL", "Tailwind CSS", "Python","Pandas","Numpy","Matplotlib", "Github"
+    "HTML", "CSS", "JavaScript", "React","Node JS", "SQL", "Tailwind CSS","Java", "Python","Pandas","Numpy","Matplotlib", "Github"
   ];
 
   return (
@@ -102,7 +102,7 @@ const Footer = () => {
                 <Instagram size={18} />
               </a>
               <a
-                href="mailto:hello@divyeshrupala.com"
+                href="mailto:divyeshrupala789@gmail.com"
                 className="p-2 rounded-lg bg-white/5 hover:bg-white/10 text-muted-foreground hover:text-foreground transition-all hover:-translate-y-1"
                 aria-label="Email"
               >
@@ -233,7 +233,7 @@ const Footer = () => {
             <span className="inline-flex items-center gap-1">
               <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
               <span>Visitors: </span>
-              <span className="font-mono">1,234</span>
+              <span className="font-mono">+999</span>
             </span>
           </div>
         </div>

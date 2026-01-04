@@ -1,14 +1,14 @@
-import { useState } from 'react';
-import { Mail, MapPin, Phone, Send } from 'lucide-react';
-import { Helmet } from 'react-helmet';
+import { useState } from "react";
+import { Mail, MapPin, Phone, Send } from "lucide-react";
+import { Helmet } from "react-helmet";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    education: '',
-    phone: '',
-    description: '',
+    name: "",
+    email: "",
+    education: "",
+    phone: "",
+    description: "",
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -30,19 +30,19 @@ const Contact = () => {
       !formData.phone ||
       !formData.description
     ) {
-      alert('Error: Please fill in all fields');
+      alert("Error: Please fill in all fields");
       return;
     }
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(formData.email)) {
-      alert('Error: Please enter a valid email address');
+      alert("Error: Please enter a valid email address");
       return;
     }
 
     const phoneRegex = /^[+]?[0-9\s\-()]{10,}$/;
-    if (!phoneRegex.test(formData.phone.replace(/\s/g, ''))) {
-      alert('Error: Please enter a valid phone number');
+    if (!phoneRegex.test(formData.phone.replace(/\s/g, ""))) {
+      alert("Error: Please enter a valid phone number");
       return;
     }
 
@@ -61,20 +61,20 @@ Submitted on: ${new Date().toLocaleDateString()} at ${new Date().toLocaleTimeStr
     `;
 
     const mailtoLink = `mailto:divyeshrupala789@gmail.com?subject=${encodeURIComponent(
-      subject,
+      subject
     )}&body=${encodeURIComponent(bodySimple)}`;
-    window.open(mailtoLink, '_blank');
+    window.open(mailtoLink, "_blank");
 
     alert(
-      `✅ Message Prepared Successfully!\n\nYour email client has opened with a pre-filled message.\n\n📧 TO: divyeshrupala789@gmail.com\n📋 Subject: ${subject}\n\nPlease review and send the email to complete your message.\n\n✅ The message will be sent in this format:\nname: ${formData.name}, email: ${formData.email}, education: ${formData.education}, phone: ${formData.phone}, message: ${formData.description}`,
+      `✅ Message Prepared Successfully!\n\nYour email client has opened with a pre-filled message.\n\n📧 TO: divyeshrupala789@gmail.com\n📋 Subject: ${subject}\n\nPlease review and send the email to complete your message.\n\n✅ The message will be sent in this format:\nname: ${formData.name}, email: ${formData.email}, education: ${formData.education}, phone: ${formData.phone}, message: ${formData.description}`
     );
 
     setFormData({
-      name: '',
-      email: '',
-      education: '',
-      phone: '',
-      description: '',
+      name: "",
+      email: "",
+      education: "",
+      phone: "",
+      description: "",
     });
 
     setIsSubmitting(false);
@@ -83,22 +83,50 @@ Submitted on: ${new Date().toLocaleDateString()} at ${new Date().toLocaleTimeStr
   return (
     <>
       <Helmet>
-        <title>Contact | Divyesh Rupala - Get in Touch</title>
+        <title>
+          Contact Divyesh Rupala - Web Developer & Tech Tutor Gandhinagar
+          Gujarat
+        </title>
         <meta
           name="description"
-          content="Contact web developer and Computer Engineering student Divyesh Rupala for project inquiries, collaborations, or questions about web development services."
+          content="Contact Web Developer & Tech Tutor in Gandhinagar Gujarat. Static websites ₹4999, React JS projects, Java Python Node.js courses. Phone: +91 6354218069 | Email for web services & tutoring."
+        />
+        <meta
+          name="keywords"
+          content="contact web developer Gandhinagar, tech tutor contact Gujarat, React JS developer phone, static website quote Gujarat, frontend developer contact, Java tutor Gandhinagar, Python classes contact, Node.js trainer Gujarat, web development inquiry Gandhinagar, hire web developer Gujarat, tech tutoring services contact, computer courses Gandhinagar"
         />
         <link rel="canonical" href="https://divyeshrupala.in/contact" />
+
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://divyeshrupala.in/contact" />
         <meta
           property="og:title"
-          content="Contact | Divyesh Rupala - Get in Touch"
+          content="Contact Web Developer & Tutor | Gandhinagar Gujarat - Divyesh Rupala"
         />
         <meta
           property="og:description"
-          content="Use the contact form, email, or phone to reach Divyesh Rupala for freelance web development, portfolio projects, or collaboration opportunities."
+          content="Get in touch for web development projects ₹4999+ or tech tutoring. Phone: +916354218069 | Email: divyeshrupala789@gmail.com | Serving Gandhinagar, Gujarat."
         />
-        <meta property="og:url" content="https://divyeshrupala.in/contact" />
-        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="https://divyeshrupala.in/og-contact.jpg"
+        />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Contact Web Developer Gandhinagar | ₹4999 Websites"
+        />
+        <meta
+          name="twitter:description"
+          content="React JS Developer + Tech Tutor. Call/WhatsApp +91 6354218069 or email for web projects & courses. Gandhinagar Gujarat."
+        />
+        <meta
+          name="twitter:image"
+          content="https://divyeshrupala.in/og-contact.jpg"
+        />
       </Helmet>
 
       <div className="min-h-screen py-20 px-4 sm:px-6 lg:px-8">
@@ -109,7 +137,8 @@ Submitted on: ${new Date().toLocaleDateString()} at ${new Date().toLocaleTimeStr
               Get in <span className="text-gradient">Touch</span>
             </h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Have a question or want to work together? I'd love to hear from you!
+              Have a question or want to work together? I'd love to hear from
+              you!
             </p>
           </div>
 
@@ -157,7 +186,9 @@ Submitted on: ${new Date().toLocaleDateString()} at ${new Date().toLocaleTimeStr
                   </div>
                   <div>
                     <h3 className="font-semibold mb-1">Location</h3>
-                    <p className="text-sm text-muted-foreground">Gujarat, India</p>
+                    <p className="text-sm text-muted-foreground">
+                      Gujarat, India
+                    </p>
                   </div>
                 </div>
               </div>
@@ -165,12 +196,14 @@ Submitted on: ${new Date().toLocaleDateString()} at ${new Date().toLocaleTimeStr
               <div className="glass p-6 rounded-2xl">
                 <h3 className="font-semibold mb-3">How It Works</h3>
                 <p className="text-sm text-muted-foreground mb-2">
-                  Fill the form, click submit, and your email client will open with a pre-filled message. Just
-                  review and send!
+                  Fill the form, click submit, and your email client will open
+                  with a pre-filled message. Just review and send!
                 </p>
                 <div className="flex items-center gap-2 mt-3">
                   <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                  <span className="text-xs text-green-400">Direct Email Method</span>
+                  <span className="text-xs text-green-400">
+                    Direct Email Method
+                  </span>
                 </div>
               </div>
 
@@ -180,7 +213,8 @@ Submitted on: ${new Date().toLocaleDateString()} at ${new Date().toLocaleTimeStr
                   Your message will be sent in this format:
                 </p>
                 <div className="mt-2 p-2 bg-background rounded text-xs font-mono">
-                  name: ..., email: ..., education: ..., phone: ..., message: ...
+                  name: ..., email: ..., education: ..., phone: ..., message:
+                  ...
                 </div>
               </div>
             </div>
@@ -190,7 +224,10 @@ Submitted on: ${new Date().toLocaleDateString()} at ${new Date().toLocaleTimeStr
               <form onSubmit={handleSubmit} className="glass p-8 rounded-2xl">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium mb-2">
+                    <label
+                      htmlFor="name"
+                      className="block text-sm font-medium mb-2"
+                    >
                       Your Name <span className="text-primary">*</span>
                     </label>
                     <input
@@ -207,7 +244,10 @@ Submitted on: ${new Date().toLocaleDateString()} at ${new Date().toLocaleTimeStr
                   </div>
 
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium mb-2">
+                    <label
+                      htmlFor="email"
+                      className="block text-sm font-medium mb-2"
+                    >
                       Email Address <span className="text-primary">*</span>
                     </label>
                     <input
@@ -226,7 +266,10 @@ Submitted on: ${new Date().toLocaleDateString()} at ${new Date().toLocaleTimeStr
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                   <div>
-                    <label htmlFor="education" className="block text-sm font-medium mb-2">
+                    <label
+                      htmlFor="education"
+                      className="block text-sm font-medium mb-2"
+                    >
                       Education <span className="text-primary">*</span>
                     </label>
                     <select
@@ -248,7 +291,10 @@ Submitted on: ${new Date().toLocaleDateString()} at ${new Date().toLocaleTimeStr
                   </div>
 
                   <div>
-                    <label htmlFor="phone" className="block text-sm font-medium mb-2">
+                    <label
+                      htmlFor="phone"
+                      className="block text-sm font-medium mb-2"
+                    >
                       Phone Number <span className="text-primary">*</span>
                     </label>
                     <input
@@ -266,8 +312,12 @@ Submitted on: ${new Date().toLocaleDateString()} at ${new Date().toLocaleTimeStr
                 </div>
 
                 <div className="mb-8">
-                  <label htmlFor="description" className="block text-sm font-medium mb-2">
-                    Why are you contacting me? <span className="text-primary">*</span>
+                  <label
+                    htmlFor="description"
+                    className="block text-sm font-medium mb-2"
+                  >
+                    Why are you contacting me?{" "}
+                    <span className="text-primary">*</span>
                   </label>
                   <textarea
                     id="description"
@@ -304,18 +354,21 @@ Submitted on: ${new Date().toLocaleDateString()} at ${new Date().toLocaleTimeStr
                   <p className="text-sm text-blue-500/90 flex items-center gap-2">
                     <span className="text-blue-500">ℹ️</span>
                     <span>
-                      <strong>Note:</strong> After submitting, your email client will open with a pre-filled
-                      message. Just review and click send. Your message will be sent in the format:{' '}
+                      <strong>Note:</strong> After submitting, your email client
+                      will open with a pre-filled message. Just review and click
+                      send. Your message will be sent in the format:{" "}
                       <code className="ml-2 px-2 py-1 bg-black/20 rounded text-xs">
-                        name: ..., email: ..., education: ..., phone: ..., message: ...
+                        name: ..., email: ..., education: ..., phone: ...,
+                        message: ...
                       </code>
                     </span>
                   </p>
                 </div>
 
                 <p className="text-xs text-muted-foreground mt-4">
-                  By submitting this form, you agree to our privacy policy. Your information is secure and will
-                  only be used to respond to your inquiry.
+                  By submitting this form, you agree to our privacy policy. Your
+                  information is secure and will only be used to respond to your
+                  inquiry.
                 </p>
               </form>
             </div>

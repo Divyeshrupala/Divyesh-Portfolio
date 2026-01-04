@@ -1,33 +1,69 @@
-import { Link } from 'react-router-dom';
-import { ArrowRight, Code2, Database, Globe } from 'lucide-react';
-import { Helmet } from 'react-helmet';
+import { Link } from "react-router-dom";
+import { ArrowRight, Code2, Database, Globe } from "lucide-react";
+import { Helmet } from "react-helmet";
 
 const Home = () => {
   const featuredSkills = [
-    { icon: Code2, name: 'Frontend Development', desc: 'React, JavaScript, HTML/CSS' },
-    { icon: Database, name: 'Backend Development', desc: 'Node.js, SQL, Python' },
-    { icon: Globe, name: 'Full Stack', desc: 'End-to-end web solutions' },
+    {
+      icon: Code2,
+      name: "Frontend Development",
+      desc: "React, JavaScript, HTML/CSS",
+    },
+    {
+      icon: Database,
+      name: "Backend Development",
+      desc: "Node.js, SQL, Python",
+    },
+    { icon: Globe, name: "Full Stack", desc: "End-to-end web solutions" },
   ];
 
   return (
     <>
       <Helmet>
-        <title>Home | Divyesh Rupala - Web Developer</title>
+        <title>
+          Divyesh Rupala - Web Developer & Tech Tutor in Gandhinagar Gujarat |
+          React JS ₹4999
+        </title>
         <meta
           name="description"
-          content="Explore the portfolio, skills, and featured web development projects of Divyesh Rupala, a Computer Engineering student and React developer."
+          content="Gandhinagar Gujarat based Frontend Developer & Tech Tutor. Static Websites ₹4999, React JS, HTML CSS JS services + Java, Python, Node.js, Database, AI Tools online courses."
+        />
+        <meta
+          name="keywords"
+          content="web developer Gandhinagar, tech tutor Gujarat, React JS developer Gujarat, static website Gandhinagar ₹4999, frontend developer Gujarat, Java tutor Gandhinagar, Python courses Gujarat, Node.js training Gandhinagar, web development services Gandhinagar, computer tutor Gujarat, AI tools training Gujarat, HTML CSS tutor Gandhinagar"
         />
         <link rel="canonical" href="https://divyeshrupala.in/" />
+
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://divyeshrupala.in/" />
         <meta
           property="og:title"
-          content="Home | Divyesh Rupala - Web Developer"
+          content="Web Developer & Tech Tutor Gandhinagar Gujarat - Divyesh Rupala"
         />
         <meta
           property="og:description"
-          content="Discover React and Node.js projects by web developer and Computer Engineering student Divyesh Rupala."
+          content="Professional Web Development + Tech Tutoring in Gandhinagar. Websites from ₹4999 + Java/Python/Node.js courses. Local Gujarat expert."
         />
-        <meta property="og:url" content="https://divyeshrupala.in/" />
-        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="https://divyeshrupala.in/og-image.jpg"
+        />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Web Developer & Tutor | Gandhinagar Gujarat ₹4999"
+        />
+        <meta
+          name="twitter:description"
+          content="React JS Developer + Tech Tutor in Gandhinagar. Static websites ₹4999 + Java, Python, Node.js courses."
+        />
+        <meta
+          name="twitter:image"
+          content="https://divyeshrupala.in/og-image.jpg"
+        />
       </Helmet>
 
       <div className="min-h-screen">
@@ -46,7 +82,8 @@ const Home = () => {
                 Web Developer & Computer Engineering Student
               </p>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-                Crafting interactive and user-friendly web experiences with modern technologies
+                Crafting interactive and user-friendly web experiences with
+                modern technologies
               </p>
               <div className="flex flex-wrap justify-center gap-4">
                 <Link
@@ -54,7 +91,10 @@ const Home = () => {
                   className="group px-8 py-3 bg-primary hover:bg-primary/90 text-white rounded-lg font-medium transition-all hover:scale-105 flex items-center gap-2"
                 >
                   View My Work
-                  <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight
+                    size={20}
+                    className="group-hover:translate-x-1 transition-transform"
+                  />
                 </Link>
                 <Link
                   to="/contact"
@@ -95,19 +135,21 @@ const Home = () => {
               <h2 className="text-3xl sm:text-4xl font-bold mb-4">
                 Featured <span className="text-gradient">Projects</span>
               </h2>
-              <p className="text-muted-foreground">Check out some of my recent work</p>
+              <p className="text-muted-foreground">
+                Check out some of my recent work
+              </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
               {[
                 {
-                  title: 'My Personal ChatGPT',
-                  desc: 'Chatbot using OpenAI API',
-                  tech: 'HTML, CSS, JS, OpenAI API',
+                  title: "My Personal ChatGPT",
+                  desc: "Chatbot using OpenAI API",
+                  tech: "HTML, CSS, JS, OpenAI API",
                 },
                 {
-                  title: 'Dev Organic - An E-commerce Website',
-                  desc: 'Collaborative project for organic products',
-                  tech: 'HTML, CSS, JS, Google forms',
+                  title: "Dev Organic - An E-commerce Website",
+                  desc: "Collaborative project for organic products",
+                  tech: "HTML, CSS, JS, Google forms",
                 },
               ].map((project, index) => (
                 <div
@@ -138,10 +180,12 @@ const Home = () => {
         <section className="py-20 px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl sm:text-4xl font-bold mb-6">
-              Let's Build Something <span className="text-gradient">Amazing</span>
+              Let's Build Something{" "}
+              <span className="text-gradient">Amazing</span>
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+              I'm always open to discussing new projects, creative ideas, or
+              opportunities to be part of your vision.
             </p>
             <Link
               to="/contact"

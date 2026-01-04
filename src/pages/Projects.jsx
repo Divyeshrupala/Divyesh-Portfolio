@@ -1,110 +1,139 @@
-import { ExternalLink, Github } from 'lucide-react';
-import { Helmet } from 'react-helmet';
+import { ExternalLink, Github } from "lucide-react";
+import { Helmet } from "react-helmet";
 
 const Projects = () => {
   const projects = [
     {
-      title: 'MascotsB - IELTS Coaching & Visa Consultancy Platform',
+      title: "MascotsB - IELTS Coaching & Visa Consultancy Platform",
       description:
-        'A comprehensive frontend solution for an IELTS coaching institute and visa consultancy service, designed to streamline student engagement and exam preparation.',
-      technologies: ['HTML', 'CSS', 'JS', 'Google form'],
-      image: 'images/mascots.png',
-      githubUrl: 'https://github.com/Divyeshrupala/MascotsB_new',
-      liveUrl: 'https://mascotsb.vercel.app/',
+        "A comprehensive frontend solution for an IELTS coaching institute and visa consultancy service, designed to streamline student engagement and exam preparation.",
+      technologies: ["HTML", "CSS", "JS", "Google form"],
+      image: "images/mascots.png",
+      githubUrl: "https://github.com/Divyeshrupala/MascotsB_new",
+      liveUrl: "https://mascotsb.vercel.app/",
     },
     {
-      title: 'SSV School - Comprehensive Educational Website',
+      title: "SSV School - Comprehensive Educational Website",
       description:
-        'A full-featured school management and information portal with extensive content architecture spanning 10+ interconnected pages and sub-pages.',
-      technologies: ['HTML', 'CSS', 'JS'],
-      image: 'images/ssv.png',
-      githubUrl: 'https://github.com/Divyeshrupala/ssv-campus',
-      liveUrl: 'https://ssv-campus.vercel.app/',
+        "A full-featured school management and information portal with extensive content architecture spanning 10+ interconnected pages and sub-pages.",
+      technologies: ["HTML", "CSS", "JS"],
+      image: "images/ssv.png",
+      githubUrl: "https://github.com/Divyeshrupala/ssv-campus",
+      liveUrl: "https://ssv-campus.vercel.app/",
     },
     {
-      title: 'Portfolio Website',
+      title: "Portfolio Website",
       description:
-        'A customizable portfolio website builder allowing users to create professional portfolios with drag-and-drop components.',
-      technologies: ['HTML', 'CSS', 'JS', 'Tailwind CSS'],
-      image: 'images/portfolio.png',
-      githubUrl: 'https://github.com/Divyeshrupala/Portfolio',
-      liveUrl: 'https://divyeshrupala.vercel.app/',
+        "A customizable portfolio website builder allowing users to create professional portfolios with drag-and-drop components.",
+      technologies: ["HTML", "CSS", "JS", "Tailwind CSS"],
+      image: "images/portfolio.png",
+      githubUrl: "https://github.com/Divyeshrupala/Portfolio",
+      liveUrl: "https://divyeshrupala.vercel.app/",
     },
     {
-      title: 'ChatGPT Clone - AI-Powered Conversational Interface',
+      title: "ChatGPT Clone - AI-Powered Conversational Interface",
       description:
         "A functional frontend implementation of ChatGPT leveraging OpenAI's API to create an interactive AI conversation platform.",
-      technologies: ['HTML', 'CSS', 'JS', 'Open AI API'],
-      image: 'images/Chatbot.png',
-      githubUrl: 'https://github.com/Divyeshrupala/MyPersonalChatGPT',
-      liveUrl: 'https://mypersonalchatgpt-1.onrender.com',
+      technologies: ["HTML", "CSS", "JS", "Open AI API"],
+      image: "images/Chatbot.png",
+      githubUrl: "https://github.com/Divyeshrupala/MyPersonalChatGPT",
+      liveUrl: "https://mypersonalchatgpt-1.onrender.com",
     },
     {
-      title: 'Dev Organic - E-commerce Platform with Secure Contact Integration',
+      title:
+        "Dev Organic - E-commerce Platform with Secure Contact Integration",
       description:
-        'A strategic e-commerce solution for organic products sales, prioritizing customer safety through controlled contact mechanisms rather than direct payment processing.',
-      technologies: ['HTML', 'CSS', 'JS', 'Google form'],
-      image: 'images/dev-organic.png',
+        "A strategic e-commerce solution for organic products sales, prioritizing customer safety through controlled contact mechanisms rather than direct payment processing.",
+      technologies: ["HTML", "CSS", "JS", "Google form"],
+      image: "images/dev-organic.png",
       githubUrl:
-        'https://github.com/Divyeshrupala/DevAyurvedic---Ayurvedic-Medine-Website-',
-      liveUrl: 'https://dev-organic.vercel.app/index.html',
+        "https://github.com/Divyeshrupala/DevAyurvedic---Ayurvedic-Medine-Website-",
+      liveUrl: "https://dev-organic.vercel.app/index.html",
     },
     {
-      title: 'Flora Enterprise - Landscaping & Gardening Services Website',
+      title: "Flora Enterprise - Landscaping & Gardening Services Website",
       description:
-        'A visually appealing and functional website for a professional landscaping and gardening business, designed to showcase services, projects, and facilitate customer inquiries.',
-      technologies: ['HTML', 'CSS', 'JS'],
-      image: 'images/flora.png',
-      githubUrl: 'https://github.com/Divyeshrupala/flora-enterprise-main---Copy',
-      liveUrl: 'https://flora-enterprise-main-copy.vercel.app/',
+        "A visually appealing and functional website for a professional landscaping and gardening business, designed to showcase services, projects, and facilitate customer inquiries.",
+      technologies: ["HTML", "CSS", "JS"],
+      image: "images/flora.png",
+      githubUrl:
+        "https://github.com/Divyeshrupala/flora-enterprise-main---Copy",
+      liveUrl: "https://flora-enterprise-main-copy.vercel.app/",
     },
     {
-      title: 'Dr. Ranu K Dutta - Medical Professional Portfolio',
+      title: "Dr. Ranu K Dutta - Medical Professional Portfolio",
       description:
-        'A dedicated portfolio website for Dr. Ranu K Dutta, highlighting medical expertise, services offered, and patient testimonials to enhance professional online presence.',
-      technologies: ['HTML', 'CSS', 'JS', 'React', 'Email Authentication'],
-      image: 'images/ranu-dutta.png',
-      githubUrl: 'https://github.com/yourusername/ranu-dutta',
-      liveUrl: 'https://ranu-dutta.vercel.app/',
+        "A dedicated portfolio website for Dr. Ranu K Dutta, highlighting medical expertise, services offered, and patient testimonials to enhance professional online presence.",
+      technologies: ["HTML", "CSS", "JS", "React", "Email Authentication"],
+      image: "images/ranu-dutta.png",
+      githubUrl: "https://github.com/yourusername/ranu-dutta",
+      liveUrl: "https://ranu-dutta.vercel.app/",
     },
     {
-      title: 'Blog Platform',
+      title: "Blog Platform",
       description:
-        'Modern blogging platform with markdown support, rich text editor, categories, tags, comments system, and SEO optimization for content creators.',
-      technologies: ['HTML', 'CSS', 'JS', 'Google form'],
-      image: 'images/dev-organic.png',
-      githubUrl: 'https://github.com/yourusername/blog-platform',
-      liveUrl: 'https://blog-platform-demo.com',
+        "Modern blogging platform with markdown support, rich text editor, categories, tags, comments system, and SEO optimization for content creators.",
+      technologies: ["HTML", "CSS", "JS", "Google form"],
+      image: "images/dev-organic.png",
+      githubUrl: "https://github.com/yourusername/blog-platform",
+      liveUrl: "https://blog-platform-demo.com",
     },
   ];
 
   const handleGithubClick = (url) => {
-    window.open(url, '_blank', 'noopener,noreferrer');
+    window.open(url, "_blank", "noopener,noreferrer");
   };
 
   const handleExternalClick = (url) => {
-    window.open(url, '_blank', 'noopener,noreferrer');
+    window.open(url, "_blank", "noopener,noreferrer");
   };
 
   return (
     <>
       <Helmet>
-        <title>Projects | Divyesh Rupala - Web Development Portfolio</title>
+        <title>
+          Projects | Divyesh Rupala - React JS Portfolio & Client Websites
+        </title>
         <meta
           name="description"
-          content="Explore real-world web development projects by Divyesh Rupala, including client websites, portfolio sites, ChatGPT clone, e-commerce platforms, and more."
+          content="Frontend Developer Portfolio: MascotsB IELTS, SSV School, ChatGPT Clone, E-commerce sites built with HTML CSS JS React. Live demos & GitHub source code. Gujarat web developer."
+        />
+        <meta
+          name="keywords"
+          content="React JS projects, frontend developer portfolio, HTML CSS JavaScript projects, client websites India, ChatGPT clone, school website, e-commerce portfolio, web developer Gujarat"
         />
         <link rel="canonical" href="https://divyeshrupala.in/projects" />
+
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://divyeshrupala.in/projects" />
         <meta
           property="og:title"
-          content="Projects | Divyesh Rupala - Web Development Portfolio"
+          content="Projects | Divyesh Rupala - Frontend Developer Portfolio"
         />
         <meta
           property="og:description"
-          content="See showcased projects built with HTML, CSS, JavaScript, React, and modern web technologies by web developer Divyesh Rupala."
+          content="Real client projects: IELTS coaching site, school portal, ChatGPT clone, e-commerce. Built with React JS, HTML, CSS, JavaScript."
         />
-        <meta property="og:url" content="https://divyeshrupala.in/projects" />
-        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="https://divyeshrupala.in/og-projects.jpg"
+        />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Web Development Projects | Divyesh Rupala"
+        />
+        <meta
+          name="twitter:description"
+          content="Client projects & portfolio: React JS, ChatGPT clone, school websites, e-commerce. Live demos available."
+        />
+        <meta
+          name="twitter:image"
+          content="https://divyeshrupala.in/og-projects.jpg"
+        />
       </Helmet>
 
       <div className="min-h-screen py-20 px-4 sm:px-6 lg:px-8">
@@ -205,11 +234,12 @@ const Projects = () => {
           {/* CTA Section */}
           <div className="mt-16 text-center glass p-12 rounded-2xl">
             <h2 className="text-3xl font-bold mb-4">
-              Interested in <span className="text-gradient">Collaborating?</span>
+              Interested in{" "}
+              <span className="text-gradient">Collaborating?</span>
             </h2>
             <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-              I'm always looking for new and exciting projects to work on. Let's create something amazing
-              together!
+              I'm always looking for new and exciting projects to work on. Let's
+              create something amazing together!
             </p>
             <a
               href="/contact"
