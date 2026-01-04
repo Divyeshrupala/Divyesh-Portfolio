@@ -87,7 +87,7 @@ const Courses = () => {
     const body = encodeURIComponent(
       `Hi Divyesh,\n\nI am interested in your "${courseTitle}" course.\n\nCourse Details:\n• Price: ${coursePrice}\n• Duration: ${courseDuration}\n• Mode: ${courses[0].mode}\n\nPlease share more details, batch dates, and availability.\n\nThank you!\n\nBest regards,`
     );
-    return `mailto:divyeshrupala@gmail.com?subject=${subject}&body=${body}`;
+    return `mailto:divyeshrupala789@gmail.com?subject=${subject}&body=${body}`;
   };
 
   return (
