@@ -70,13 +70,13 @@ const Projects = () => {
       liveUrl: "https://ranu-dutta.vercel.app/",
     },
     {
-      title: "Blog Platform",
+      title: "EduCare - Online Learning Platform",
       description:
-        "Modern blogging platform with markdown support, rich text editor, categories, tags, comments system, and SEO optimization for content creators.",
-      technologies: ["HTML", "CSS", "JS", "Google form"],
-      image: "images/dev-organic.png",
-      githubUrl: "https://github.com/yourusername/blog-platform",
-      liveUrl: "https://blog-platform-demo.com",
+        "An interactive online learning platform offering a variety of courses with user authentication, progress tracking, and multimedia content delivery.",
+      technologies: ["HTML", "CSS", "JS", "React", "Supabase", "Razorpay"],
+      image: "images/Educare.png",
+      githubUrl: "https://github.com/Divyeshrupala/EduLearn",
+      liveUrl: "https://edu-learn-self.vercel.app/",
     },
   ];
 
