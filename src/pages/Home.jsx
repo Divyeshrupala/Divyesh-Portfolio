@@ -86,22 +86,25 @@ const Home = () => {
                 modern technologies
               </p>
               <div className="flex flex-wrap justify-center gap-4">
+                {/* View Work */}
                 <Link
                   to="/projects"
                   className="group px-8 py-3 bg-primary hover:bg-primary/90 text-white rounded-lg font-medium transition-all hover:scale-105 flex items-center gap-2"
                 >
                   View My Work
-                  <ArrowRight
-                    size={20}
-                    className="group-hover:translate-x-1 transition-transform"
-                  />
+                  <ArrowRight size={20} />
                 </Link>
-                <Link
-                  to="/contact"
-                  className="px-8 py-3 glass hover:bg-white/10 rounded-lg font-medium transition-all"
+
+                {/* Download Resume */}
+                <a
+                  href="/Divyesh_Rupala_Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  download
+                  className="px-8 py-3 glass hover:bg-white/10 rounded-lg font-medium transition-all flex items-center gap-2"
                 >
-                  Get In Touch
-                </Link>
+                  Download Resume
+                </a>
               </div>
             </div>
           </div>
