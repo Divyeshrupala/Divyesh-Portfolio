@@ -23,12 +23,216 @@ const Courses = () => {
 
   const courses = [
     {
+      icon: BarChart3,
+      title: "Microsoft Excel (Basic to Advanced)",
+      level: "Beginner",
+      duration: "15 days (20 hours)",
+      mode: "Online + Offline",
+      price: "₹1,499",
+      description:
+        "Learn Microsoft Excel for data management, analysis, and reporting used in offices and businesses.",
+      eligibility: "Any student or working professional",
+      features: [
+        "Formulas & functions",
+        "Data analysis",
+        "Charts & reports",
+        "Productivity tools",
+      ],
+      detailedSyllabus: [
+        "Excel Interface & Basics",
+        "Data Entry & Formatting",
+        "Basic Formulas & Functions",
+        "Logical & Lookup Functions",
+        "Sorting & Filtering Data",
+        "Charts & Graphs",
+        "Pivot Tables Basics",
+        "Real-life Office Use Cases",
+      ],
+      practice: "Excel worksheets, office-style reports, real-world datasets.",
+      deliverables: [
+        "Excel Certificate",
+        "Practice Workbook",
+        "Office Productivity Guide",
+      ],
+    },
+    {
+      icon: Code2,
+      title: "C Programming Language",
+      level: "Beginner",
+      duration: "1 month (30 hours)",
+      mode: "Online + Offline",
+      price: "₹1,999",
+      description:
+        "Learn the fundamentals of C programming, the base language of computer science, used for system software and core programming concepts.",
+      eligibility: "Any graduate or student (No prior coding required)",
+      features: [
+        "C syntax & structure",
+        "Conditional statements & loops",
+        "Functions & arrays",
+        "Pointers basics",
+      ],
+      detailedSyllabus: [
+        "Introduction to Programming & C Language",
+        "Variables, Data Types & Operators",
+        "Conditional Statements (if, switch)",
+        "Loops (for, while, do-while)",
+        "Functions & Recursion",
+        "Arrays & Strings",
+        "Pointers & Memory Basics",
+        "Basic File Handling",
+      ],
+      practice:
+        "Logical programs, number-based problems, mini console-based applications.",
+      deliverables: [
+        "C Programming Certificate",
+        "Practice Code Files",
+        "Logic Building Exercises",
+      ],
+    },
+
+    {
+      icon: Code2,
+      title: "C++ Object Oriented Programming",
+      level: "Beginner to Intermediate",
+      duration: "1 month (30 hours)",
+      mode: "Online + Offline",
+      price: "₹1,999",
+      description:
+        "Master object-oriented programming concepts using C++ to build scalable and structured applications.",
+      eligibility: "Students with basic programming knowledge preferred",
+      features: [
+        "OOP concepts",
+        "Classes & objects",
+        "Inheritance & polymorphism",
+        "STL basics",
+      ],
+      detailedSyllabus: [
+        "Introduction to C++",
+        "Variables, Data Types & Operators",
+        "Control Statements & Loops",
+        "Array & String in C++",
+        "Functions & Function Overloading",
+        "Classes & Objects",
+        "Constructors & Destructors",
+        "Inheritance & Polymorphism",
+        "Encapsulation & Abstraction",
+      ],
+      practice:
+        "OOP-based programs, class design tasks, mini Tasks for real-world scenarios.",
+      deliverables: [
+        "C++ OOP Certificate",
+        "C++ Source Code Files",
+        "Interview-Oriented OOP Notes",
+      ],
+    },
+
+    {
+      icon: Database,
+      title: "SQL – Structured Query Language",
+      level: "Beginner",
+      duration: "1 month (30 hours)",
+      mode: "Online + Offline",
+      price: "₹1,999",
+      description:
+        "Learn SQL to manage, query, and analyze data stored in relational databases used by companies worldwide.",
+      eligibility: "Any graduate or student",
+      features: [
+        "Database fundamentals",
+        "CRUD operations",
+        "Joins & subqueries",
+        "Data filtering",
+      ],
+      detailedSyllabus: [
+        "Introduction to Databases & SQL",
+        "Database Tables & Schema",
+        "SELECT, INSERT, UPDATE, DELETE",
+        "WHERE, ORDER BY, GROUP BY",
+        "Joins (INNER, LEFT, RIGHT)",
+        "Subqueries",
+        "Indexes & Constraints",
+        "Real-world Database Queries",
+      ],
+      practice:
+        "SQL query practice, real database scenarios, hands-on exercises.",
+      deliverables: [
+        "SQL Certificate",
+        "Query Practice Sheet",
+        "Database Case Study",
+      ],
+    },
+
+    {
+      icon: Database,
+      title: "MongoDB (NoSQL Database)",
+      level: "Beginner",
+      duration: "1 month (30 hours)",
+      mode: "Online + Offline",
+      price: "₹2,999",
+      description:
+        "Learn MongoDB, a popular NoSQL database, used in modern web applications for scalable data storage.",
+      eligibility: "Students with basic programming knowledge",
+      features: [
+        "NoSQL concepts",
+        "CRUD operations",
+        "Collections & documents",
+        "MongoDB Compass",
+      ],
+      detailedSyllabus: [
+        "Introduction to NoSQL & MongoDB",
+        "Installation & Setup",
+        "Database, Collections & Documents",
+        "CRUD Operations",
+        "Query Operators",
+        "Indexes & Aggregation Basics",
+        "MongoDB Compass Usage",
+        "MongoDB with Node.js (Intro)",
+      ],
+      practice:
+        "Database creation, CRUD tasks, small backend-ready data models.",
+      deliverables: [
+        "MongoDB Certificate",
+        "Hands-on Practice Files",
+        "Backend Integration Notes",
+      ],
+    },
+    {
+      icon: Code2,
+      title: "Python Programming",
+      level: "Beginner",
+      duration: "1 months (30 hours)",
+      mode: "Online + Offline",
+      price: "₹2,999",
+      description:
+        "Learn Python from basics to advanced concepts including OOP, file handling, and automation scripts.",
+      eligibility: "B.Tech, BCA, B.Sc. IT students with basic programming",
+      features: [
+        "Variables, loops, functions",
+        "Object-oriented programming",
+        "File I/O, error handling",
+      ],
+      detailedSyllabus: [
+        "Python Installation & Environment Setup",
+        "Data Types: Lists, Tuples, Dictionaries",
+        "Control Flow & Logical Operators",
+        "Functions & Functional Programming",
+        "OOP: Classes, Inheritance & Polymorphism",
+        "Exception Handling & Debugging",
+        "File Operations & JSON Processing",
+      ],
+      practice: "Calculator App, Automation Scripts, Simple Data Scraper.",
+      deliverables: [
+        "Course Certificate",
+        "Python Script Collection",
+        "Logic Building Guide",
+      ],
+    },
+    {
       icon: GraduationCap,
       title: "Web Development",
       level: "Beginner",
       duration: "1 months (30 hours)",
       mode: "Online + Offline",
-      price: "₹5,000",
+      price: "₹4,999",
       description:
         "Build responsive websites from scratch using core web technologies including HTML, CSS, and JavaScript interactivity.",
       eligibility: "B.A, B.Com, B.Tech, BCA, B.Sc. IT graduates/students",
@@ -61,7 +265,7 @@ const Courses = () => {
       level: "Advanced",
       duration: "2 months (60 hours)",
       mode: "Online + Offline",
-      price: "₹10,000",
+      price: "₹9,999",
       description:
         "Master modern frontend frameworks to create dynamic single-page applications with state management.",
       eligibility: "B.A, B.Com, B.Tech, BCA, B.Sc. IT graduates/students",
@@ -93,7 +297,7 @@ const Courses = () => {
       level: "Advanced",
       duration: "3 months (90 hours)",
       mode: "Online + Offline",
-      price: "₹15,000",
+      price: "₹14,999",
       description:
         "Develop scalable server-side applications with databases, APIs, and authentication.",
       eligibility: "B.A, B.Com, B.Tech, BCA, B.Sc. IT graduates/students",
@@ -120,43 +324,12 @@ const Courses = () => {
       ],
     },
     {
-      icon: Code2,
-      title: "Python Programming",
-      level: "Beginner",
-      duration: "1 months (30 hours)",
-      mode: "Online + Offline",
-      price: "₹5,000",
-      description:
-        "Learn Python from basics to advanced concepts including OOP, file handling, and automation scripts.",
-      eligibility: "B.Tech, BCA, B.Sc. IT students with basic programming",
-      features: [
-        "Variables, loops, functions",
-        "Object-oriented programming",
-        "File I/O, error handling",
-      ],
-      detailedSyllabus: [
-        "Python Installation & Environment Setup",
-        "Data Types: Lists, Tuples, Dictionaries",
-        "Control Flow & Logical Operators",
-        "Functions & Functional Programming",
-        "OOP: Classes, Inheritance & Polymorphism",
-        "Exception Handling & Debugging",
-        "File Operations & JSON Processing",
-      ],
-      practice: "Calculator App, Automation Scripts, Simple Data Scraper.",
-      deliverables: [
-        "Course Certificate",
-        "Python Script Collection",
-        "Logic Building Guide",
-      ],
-    },
-    {
       icon: BarChart3,
       title: "Data Analytics",
       level: "Intermediate",
       duration: "3 months (90 hours)",
       mode: "Online + Offline",
-      price: "₹15,000",
+      price: "₹14,999",
       description:
         "Transform data into insights using Excel, SQL, Python, and visualization tools for business decision-making.",
       eligibility: "B.Tech, B.Sc., commerce graduates with basic math",
@@ -188,7 +361,7 @@ const Courses = () => {
       level: "Beginner",
       duration: "1 month (30 hours)",
       mode: "Online + Offline",
-      price: "₹10,000",
+      price: "₹9,999",
       description:
         "Harness AI tools to streamline web design, content creation, presentations, and data analysis workflows.",
       eligibility: "All graduates interested in AI productivity tools",
@@ -219,7 +392,7 @@ const Courses = () => {
   const getMailtoLink = (courseTitle, coursePrice, courseDuration) => {
     const subject = encodeURIComponent(`Course Inquiry: ${courseTitle}`);
     const body = encodeURIComponent(
-      `Hi Divyesh,\n\nI am interested in your "${courseTitle}" course.\n\nCourse Details:\n• Price: ${coursePrice}\n• Duration: ${courseDuration}\n\nPlease share more details regarding batch timings.\n\nThank you!`
+      `Hi Divyesh,\n\nI am interested in your "${courseTitle}" course.\n\nCourse Details:\n• Price: ${coursePrice}\n• Duration: ${courseDuration}\n\nPlease share more details regarding batch timings.\n\nThank you!`,
     );
     return `mailto:divyeshrupala789@gmail.com?subject=${subject}&body=${body}`;
   };
@@ -227,10 +400,55 @@ const Courses = () => {
   return (
     <>
       <Helmet>
-        <title>Courses | Divyesh Rupala - Industry-Ready Training</title>
+        {/* Primary SEO */}
+        <title>
+          Low Budget IT Courses Near Me | Online & Offline Training in
+          Gandhinagar, Gujarat & All India – Divyesh Rupala
+        </title>
+
         <meta
           name="description"
-          content="Professional Web Development, Python, and Data Analytics Courses in Gujarat."
+          content="I am a developer providing low budget IT courses for students and freshers to grow their career with real-world scenarios. I offer both online and offline training from Gandhinagar, Gujarat (382010), and online classes for students across all states in India."
+        />
+
+        <meta
+          name="keywords"
+          content="low budget IT courses near me, online IT courses india, offline computer courses gandhinagar, programming courses near me, online coding classes india, courses for freshers india, student training gandhinagar gujarat, web development course online offline, python course near me, c c++ sql mongodb course india"
+        />
+
+        <meta name="author" content="Divyesh Rupala" />
+        <meta name="robots" content="index, follow" />
+
+        {/* Local + National SEO */}
+        <meta name="geo.region" content="IN-GJ" />
+        <meta name="geo.placename" content="Gandhinagar, Gujarat, India" />
+        <meta name="geo.position" content="23.2156;72.6369" />
+        <meta name="ICBM" content="23.2156, 72.6369" />
+
+        <link rel="canonical" href="https://divyeshrupala.in/courses" />
+
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Divyesh Rupala" />
+        <meta property="og:url" content="https://divyeshrupala.in/courses" />
+        <meta
+          property="og:title"
+          content="Low Budget IT Courses Near Me | Online & Offline – India"
+        />
+        <meta
+          property="og:description"
+          content="Affordable IT courses for students and freshers. Offline classes in Gandhinagar, Gujarat and online training available across all India with real-world projects."
+        />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Online & Offline IT Courses Near Me | Student & Fresher Friendly"
+        />
+        <meta
+          name="twitter:description"
+          content="Developer-led low budget IT courses with real-world training. Offline in Gandhinagar, Gujarat and online for students from all states in India."
         />
       </Helmet>
 
@@ -291,7 +509,7 @@ const Courses = () => {
                     href={getMailtoLink(
                       course.title,
                       course.price,
-                      course.duration
+                      course.duration,
                     )}
                     className="w-full inline-flex items-center justify-center px-4 py-3 bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-white rounded-xl font-bold transition-all hover:scale-105 text-sm"
                     target="_blank"
@@ -413,7 +631,7 @@ const Courses = () => {
                   href={getMailtoLink(
                     selectedCourse.title,
                     selectedCourse.price,
-                    selectedCourse.duration
+                    selectedCourse.duration,
                   )}
                   className="w-full inline-block px-6 py-4 bg-gradient-to-r from-primary to-primary/90 text-white rounded-xl font-bold text-center transition-all hover:scale-[1.02]"
                 >

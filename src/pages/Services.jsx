@@ -86,7 +86,7 @@ const Services = () => {
     {
       icon: Layout,
       title: "Static Website",
-      price: "₹4999",
+      price: "₹3999",
       description:
         "Perfect for small businesses and personal portfolios. Fast, responsive, and SEO-ready.",
       features: [
@@ -140,44 +140,63 @@ const Services = () => {
   return (
     <>
       <Helmet>
+        {/* Primary Local SEO */}
         <title>
-          Services | Divyesh Rupala - Frontend Developer & Web Development ₹4999
+          Make Your Own Website with Low Budget ₹3999 in Gandhinagar, Gujarat |
+          Web Development & Internship – Divyesh Rupala
         </title>
+
         <meta
           name="description"
-          content="Professional Web Development Services in India: Static Website ₹4999 (5 pages), Premium ₹7999 (12 pages), Custom Full-Stack Solutions. React JS, Node.js, SEO Optimized."
+          content="Make your own website with low budget ₹3999 in Gandhinagar, Gujarat, India. Professional web development services for startups, shops, and individuals. Internship provided for freshers and last year UG students to grow their career with real projects."
         />
+
         <meta
           name="keywords"
-          content="web development services India, static website ₹4999, React JS developer, frontend development, Node.js services, affordable website design Gujarat, web developer pricing"
+          content="make your own website gandhinagar, low budget website gandhinagar, website development gandhinagar gujarat, web developer near me, website ₹3999 india, internship for freshers gujarat, web development internship gandhinagar, last year ug student internship, full-stack developer gandhinagar"
         />
+
+        <meta name="author" content="Divyesh Rupala" />
+        <meta name="robots" content="index, follow" />
+
+        {/* Local SEO */}
+        <meta name="geo.region" content="IN-GJ" />
+        <meta name="geo.placename" content="Gandhinagar, Gujarat, India" />
+        <meta name="geo.position" content="23.2156;72.6369" />
+        <meta name="ICBM" content="23.2156, 72.6369" />
+
         <link rel="canonical" href="https://divyeshrupala.in/services" />
 
         {/* Open Graph */}
         <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Divyesh Rupala" />
         <meta property="og:url" content="https://divyeshrupala.in/services" />
         <meta
           property="og:title"
-          content="Services | Web Development Starting ₹4999 - Divyesh Rupala"
+          content="Low Budget Website ₹3999 in Gandhinagar | Web Development & Internship"
         />
         <meta
           property="og:description"
-          content="Static websites ₹4999 | Premium ₹7999 | Custom full-stack development. React JS specialist from Gujarat, India."
+          content="Affordable website development in Gandhinagar, Gujarat starting at ₹3999. Also providing internships for freshers and final year UG students to build real-world skills."
         />
         <meta
           property="og:image"
           content="https://divyeshrupala.in/og-services.jpg"
         />
+        <meta
+          property="og:image:alt"
+          content="Low Budget Website Development and Internship in Gandhinagar Gujarat"
+        />
 
-        {/* Twitter */}
+        {/* Twitter SEO */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="Web Development Services ₹4999 | Divyesh Rupala"
+          content="Make Your Own Website ₹3999 | Gandhinagar Gujarat"
         />
         <meta
           name="twitter:description"
-          content="Static ₹4999 (5 pages) | Premium ₹7999 | Custom Solutions. React JS Developer from Gujarat."
+          content="Low budget website development in Gandhinagar, Gujarat. Internship available for freshers & last year UG students."
         />
         <meta
           name="twitter:image"
@@ -240,7 +259,7 @@ const Services = () => {
                 <span className="text-gradient">Low Budget</span>
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Affordable professional websites starting at just ₹4999. Perfect
+                Affordable professional websites starting at just ₹3999. Perfect
                 for startups and small businesses.
               </p>
             </div>
